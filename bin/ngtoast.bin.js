@@ -5,8 +5,9 @@ var fs = require('fs'),
     config;
 
 // read config
-if(args.c){
-    var cs = fs.readFileSync(args.c);
+var configFile = './ngtoast.json';
+if(fs.existsSync(configFile)){
+    var cs = fs.readFileSync(configFile);
     config = JSON.parse(cs);
 }
 else
