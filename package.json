@@ -1,0 +1,15 @@
+{
+    "name": "ngtoast.js",
+    "description": "angularjs installable modules",
+    "version": "0.0.1",
+    "author": "Kakhaber Bazerashvili",
+    "engines": {
+        "node": ">= 0.4.0"
+    },
+    "dependencies": {
+        "optimist": ""
+    },
+    "bin": {
+        "ngtoast": "bin/ngtoast.bin.js"
+    }
+}
