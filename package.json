@@ -1,8 +1,11 @@
 {
     "name": "ngtoast",
     "description": "angularjs installable modules",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Kakhaber Bazerashvili",
+    "homepage": "https://github.com/karaxuna/ngtoast",
+    "repository": "https://github.com/karaxuna/ngtoast.git",
+    "license": "MIT",
     "engines": {
         "node": ">= 0.4.0"
     },
