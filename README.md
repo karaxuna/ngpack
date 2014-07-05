@@ -44,7 +44,7 @@ Angularjs installable modules. Only adding folder is required to add module in a
     
 After this, `modules.js` folder will appear in `./public` folder (`output` parameter in configuration file).
 
-## `module.js`
+## Output
 
 File will contain all modules, directives, factories, controllers and filters of application. Each of them will have additional parameters supplied:
 
