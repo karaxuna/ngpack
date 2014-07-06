@@ -30,7 +30,7 @@ Package manager for angularjs
                 ... same here
     -ngtoast.json
     
-## Parameters must be saved in `ngtoast.json` or passed through command line:
+Parameters must be saved in `ngtoast.json` or passed through command line:
 
     {
     	"public": [path to public folder],
@@ -38,7 +38,7 @@ Package manager for angularjs
         "output": [output file name]
     }
     
-## Building concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):
+Building concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):
 
     ngtoast build
 
