@@ -67,7 +67,8 @@ angular
             .state(module.name, {
                 url: [module url],
                 templateUrl: module.path + 'views/[view name]',
-                controller: module.name + '.c.[controller name]' // controller name is prefixed to avoid conflict
+                // controller name is prefixed to avoid conflict
+                controller: module.name + '.c.[controller name]'
             });
     }]);
 ```
@@ -75,9 +76,10 @@ angular
 Example (`[module]/controllers/[controller name]/index.js`):
 
 ```javascript
-angular.module(module.name).controller(module.name + '.c.' + current.name, ['$scope', function(scope){
-    ...
-}]);
+angular.module(module.name).controller(module.name + '.c.' + current.name,
+    ['$scope', function(scope){
+        ...
+    }]);
 ```
 
 ## Remote modules (not implemented yet!)
