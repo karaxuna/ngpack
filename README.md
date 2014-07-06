@@ -76,10 +76,12 @@ Example (`[module]/controllers/[controller name]/index.js`):
         ...
     }]);
 
-## Installing remote modules (not implemented yet!)
+## Remote modules (not implemented yet!)
+
+installing:
 
     ngtoast install [remote module name] --as [folder name]
 
-## Uninstalling module (not implemented yet!)
+uninstalling:
 
     ngtoast uninstall [folder name]
