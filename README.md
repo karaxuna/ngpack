@@ -30,6 +30,8 @@ Package manager for angularjs
                 ... same here
     -ngtoast.json
     
+## Config
+
 Parameters must be saved in `ngtoast.json` or passed through command line:
 
     {
