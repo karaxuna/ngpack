@@ -60,24 +60,24 @@ File will contain all modules, directives, factories, controllers and filters of
 Example (`[module]/module.js`):
 
 ```javascript
-    angular
-        .module(module.name, module.dependencies.concat('ui.router'))
-        .config(['$stateProvider', function(stateProvider){
-            stateProvider
-                .state(module.name, {
-                    url: [module url],
-                    templateUrl: module.path + 'views/[view name]',
-                    controller: module.name + '.c.[controller name]' // controller name is prefixed to avoid conflict
-                });
-        }]);
+angular
+    .module(module.name, module.dependencies.concat('ui.router'))
+    .config(['$stateProvider', function(stateProvider){
+        stateProvider
+            .state(module.name, {
+                url: [module url],
+                templateUrl: module.path + 'views/[view name]',
+                controller: module.name + '.c.[controller name]' // controller name is prefixed to avoid conflict
+            });
+    }]);
 ```
         
 Example (`[module]/controllers/[controller name]/index.js`):
 
 ```javascript
-    angular.module(module.name).controller(module.name + '.c.' + current.name, ['$scope', function(scope){
-        ...
-    }]);
+angular.module(module.name).controller(module.name + '.c.' + current.name, ['$scope', function(scope){
+    ...
+}]);
 ```
 
 ## Remote modules (not implemented yet!)
