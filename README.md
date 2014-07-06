@@ -1,6 +1,6 @@
 # ngtoast
 
-Angularjs installable modules. Only adding folder is required to add module in angularjs app.
+Package manager for angularjs
 
 ## Installation:
 
@@ -30,19 +30,17 @@ Angularjs installable modules. Only adding folder is required to add module in a
                 ... same here
     -ngtoast.json
     
-## Parameters in `ngtoast.json`:
+## Parameters must be saved in `ngtoast.json` or passed through command line:
 
     {
-    	"publicAbsPath": "./public",
-        "modulesRelPath": "modules",
-        "output": "./public/modules.js"
+    	"public": [path to public folder],
+        "modules": [relative path from public to modules folder],
+        "output": [output file name]
     }
     
-## Run this command in application folder:
+## Building concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):
 
-    ngtoast
-    
-After this, `modules.js` folder will appear in `./public` folder (`output` parameter in configuration file).
+    ngtoast build
 
 ## Output
 
@@ -77,10 +75,11 @@ Example (`[module]/controllers/[controller name]/index.js`):
     angular.module(module.name).controller(module.name + '.c.' + current.name, ['$scope', function(scope){
         ...
     }]);
-    
-Directives act same way.
 
+## Installing remote modules (not implemented yet!)
 
+    ngtoast install [remote module name] --as [folder name]
 
+## Uninstalling module (not implemented yet!)
 
-
+    ngtoast uninstall [folder name]
