@@ -6,7 +6,7 @@ Package manager for angularjs
 
     npm install ngtoast
 
-## File structure:
+## File structure ([example](https://github.com/karaxuna/ngtoast-example)):
 
     -public
         -modules
@@ -59,6 +59,7 @@ File will contain all modules, directives, factories, controllers and filters of
     
 Example (`[module]/module.js`):
 
+```javascript
     angular
         .module(module.name, module.dependencies.concat('ui.router'))
         .config(['$stateProvider', function(stateProvider){
@@ -69,12 +70,15 @@ Example (`[module]/module.js`):
                     controller: module.name + '.c.[controller name]' // controller name is prefixed to avoid conflict
                 });
         }]);
+```
         
 Example (`[module]/controllers/[controller name]/index.js`):
 
+```javascript
     angular.module(module.name).controller(module.name + '.c.' + current.name, ['$scope', function(scope){
         ...
     }]);
+```
 
 ## Remote modules (not implemented yet!)
 
