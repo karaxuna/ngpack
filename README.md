@@ -84,12 +84,16 @@ angular.module(module.name).controller(module.name + '.c.' + current.name,
     }]);
 ```
 
-## Remote modules (not implemented yet!)
+## Remote packages (not implemented yet!)
 
 installing:
 
-    ngtoast install [remote module name] --as [folder name]
+    ngtoast install [remote package name] --module [module name] --parent [parent module name] --as [changed module name]
 
 uninstalling:
 
-    ngtoast uninstall [folder name]
+    ngtoast uninstall [package name]
+
+publishing:
+
+    ngtoast publish [package name]
