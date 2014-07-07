@@ -63,7 +63,7 @@ Example (`[module]/module.js`):
 
 ```javascript
 angular
-    .module(module.name, module.dependencies.concat('ui.router'))
+    .module(module.name, ['ui.router'].concat(module.dependencies.concat))
     .config(['$stateProvider', function(stateProvider){
         stateProvider
             .state(module.name, {
