@@ -1,18 +1,38 @@
 {
-    "name": "ngtoast",
-    "description": "angularjs package manager",
-    "version": "0.0.7",
-    "author": "Kakhaber Bazerashvili",
-    "homepage": "https://github.com/karaxuna/ngtoast",
-    "repository": "git://github.com/karaxuna/ngtoast.git",
-    "license": "MIT",
-    "engines": {
-        "node": ">= 0.4.0"
-    },
-    "dependencies": {
-        "optimist": ""
-    },
-    "bin": {
-        "ngtoast": "bin/ngtoast.bin.js"
-    }
+  "name": "ngtoast",
+  "description": "angularjs package manager",
+  "version": "0.0.8",
+  "author": {
+    "name": "Kakhaber Bazerashvili"
+  },
+  "homepage": "https://github.com/karaxuna/ngtoast",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/karaxuna/ngtoast.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "dependencies": {
+    "optimist": "",
+    "jszip": "",
+    "walk": "",
+    "async": "",
+    "mkdirp": ""
+  },
+  "bin": {
+    "ngtoast": "bin/ngtoast.bin.js"
+  },
+  "readme": "# ngtoast\n\nPackage manager for angularjs\n\n## Installation:\n\n    npm install ngtoast\n\n## File structure ([example](https://github.com/karaxuna/ngtoast-example)):\n\n    -public\n        -modules\n            -[module]\n                -directives\n                    -[directive name]\n                        -index.js\n                -controllers\n                    -[controller name]\n                        -index.js\n                -filters\n                    -[filter name]\n                        -index.js\n                -factories\n                    -[factory name]\n                        -index.js\n                -views\n                    -[view name]\n                -module.js\n            -[module].[child]\n                ... same here\n    -ngtoast.json\n    \n## Config\n\nParameters must be saved in `ngtoast.json` or passed through command line:\n\n    {\n    \t\"public\": [path to public folder],\n        \"modules\": [relative path from public to modules folder],\n        \"output\": [output file name]\n    }\n    \nBuilding concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):\n\n    ngtoast build\n\n## Output\n\nFile will contain all modules, directives, factories, controllers and filters of application. Each of them will have additional parameters supplied:\n\n    module: {\n        name: [module name],\n        path: [module path],\n        dependencies: [array of child module names]\n    },\n    \n    current: {\n        name: [current directive/filter/factory/controller name],\n        path: [path]\n    }\n    \nExample (`[module]/module.js`):\n\n```javascript\nangular\n    .module(module.name, ['ui.router'].concat(module.dependencies.concat))\n    .config(['$stateProvider', function(stateProvider){\n        stateProvider\n            .state(module.name, {\n                url: [module url],\n                templateUrl: module.path + 'views/[view name]',\n                // controller name is prefixed to avoid conflict\n                controller: module.name + '.c.[controller name]'\n            });\n    }]);\n```\n        \nExample (`[module]/controllers/[controller name]/index.js`):\n\n```javascript\nangular.module(module.name).controller(module.name + '.c.' + current.name,\n    ['$scope', function(scope){\n        ...\n    }]);\n```\n\n## Remote packages (not implemented yet!)\n\ninstalling:\n\n    ngtoast install [remote package name] --module [module name] --parent [parent module name] --as [changed module name]\n\nuninstalling:\n\n    ngtoast uninstall [package name]\n\npublishing:\n\n    ngtoast publish [package name]",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/karaxuna/ngtoast/issues"
+  },
+  "_id": "ngtoast@0.0.8",
+  "dist": {
+    "shasum": "c4e35495ed33de05397158e3003e6707f04f00a0"
+  },
+  "_from": "ngtoast@",
+  "_resolved": "https://registry.npmjs.org/ngtoast/-/ngtoast-0.0.8.tgz"
 }

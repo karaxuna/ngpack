@@ -30,6 +30,8 @@ Package manager for angularjs
                 ... same here
     -ngtoast.json
     
+## Config
+
 Parameters must be saved in `ngtoast.json` or passed through command line:
 
     {
@@ -61,7 +63,7 @@ Example (`[module]/module.js`):
 
 ```javascript
 angular
-    .module(module.name, module.dependencies.concat('ui.router'))
+    .module(module.name, ['ui.router'].concat(module.dependencies.concat))
     .config(['$stateProvider', function(stateProvider){
         stateProvider
             .state(module.name, {
@@ -82,12 +84,16 @@ angular.module(module.name).controller(module.name + '.c.' + current.name,
     }]);
 ```
 
-## Remote modules (not implemented yet!)
+## Remote packages (not implemented yet!)
 
 installing:
 
-    ngtoast install [remote module name] --as [folder name]
+    ngtoast install [remote package name] --module [module name] --parent [parent module name] --as [changed module name]
 
 uninstalling:
 
-    ngtoast uninstall [folder name]
+    ngtoast uninstall [package name]
+
+publishing:
+
+    ngtoast publish [package name]
