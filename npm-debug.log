@@ -1,0 +1,155 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . C:\Users\Kakhaber\AppData\Roaming\npm-cache\3a52ce78-.lock
+10 verbose tar pack [ 'C:\\Users\\Kakhaber\\AppData\\Local\\Temp\\npm-3372-VIZ7NqS0\\1404850241353-0.232115987688303\\tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+12 verbose folder .
+13 info prepublish ngtoast@0.0.8
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. C:\Users\Kakhaber\AppData\Roaming\npm-cache\1f1177db-tar.lock
+16 silly lockFile 44899bb5-241353-0-232115987688303-tmp-tgz tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+17 verbose lock tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz C:\Users\Kakhaber\AppData\Roaming\npm-cache\44899bb5-241353-0-232115987688303-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 44899bb5-241353-0-232115987688303-tmp-tgz tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+21 silly lockFile 44899bb5-241353-0-232115987688303-tmp-tgz tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+22 verbose tar unpack C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+23 silly lockFile 884b12e0-241353-0-232115987688303-package tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package
+24 verbose lock tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package C:\Users\Kakhaber\AppData\Roaming\npm-cache\884b12e0-241353-0-232115987688303-package.lock
+25 silly lockFile 44899bb5-241353-0-232115987688303-tmp-tgz tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+26 verbose lock tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz C:\Users\Kakhaber\AppData\Roaming\npm-cache\44899bb5-241353-0-232115987688303-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+32 silly gunzTarPerm extractEntry LICENSE
+33 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+34 silly gunzTarPerm extractEntry bin/ngtoast.bin.js
+35 silly gunzTarPerm modified mode [ 'bin/ngtoast.bin.js', 438, 420 ]
+36 silly gunzTarPerm extractEntry commands/build.js
+37 silly gunzTarPerm modified mode [ 'commands/build.js', 438, 420 ]
+38 silly gunzTarPerm extractEntry commands/install.js
+39 silly gunzTarPerm modified mode [ 'commands/install.js', 438, 420 ]
+40 silly gunzTarPerm extractEntry commands/publish.js
+41 silly gunzTarPerm modified mode [ 'commands/publish.js', 438, 420 ]
+42 silly gunzTarPerm extractEntry libs/utils.js
+43 silly gunzTarPerm modified mode [ 'libs/utils.js', 438, 420 ]
+44 silly lockFile 884b12e0-241353-0-232115987688303-package tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package
+45 silly lockFile 884b12e0-241353-0-232115987688303-package tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package
+46 silly lockFile 44899bb5-241353-0-232115987688303-tmp-tgz tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+47 silly lockFile 44899bb5-241353-0-232115987688303-tmp-tgz tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\tmp.tgz
+48 verbose tar pack [ 'C:\\Users\\Kakhaber\\AppData\\Roaming\\npm-cache\\ngtoast\\0.0.8\\package.tgz',
+48 verbose tar pack   'C:\\Users\\Kakhaber\\AppData\\Local\\Temp\\npm-3372-VIZ7NqS0\\1404850241353-0.232115987688303\\package' ]
+49 verbose tarball C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+50 verbose folder C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package
+51 silly lockFile 884b12e0-241353-0-232115987688303-package tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package
+52 verbose lock tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package C:\Users\Kakhaber\AppData\Roaming\npm-cache\884b12e0-241353-0-232115987688303-package.lock
+53 silly lockFile 77ed5915--cache-ngtoast-0-0-8-package-tgz tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+54 verbose lock tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz C:\Users\Kakhaber\AppData\Roaming\npm-cache\77ed5915--cache-ngtoast-0-0-8-package-tgz.lock
+55 silly lockFile 884b12e0-241353-0-232115987688303-package tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package
+56 silly lockFile 884b12e0-241353-0-232115987688303-package tar://C:\Users\Kakhaber\AppData\Local\Temp\npm-3372-VIZ7NqS0\1404850241353-0.232115987688303\package
+57 silly lockFile 77ed5915--cache-ngtoast-0-0-8-package-tgz tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+58 silly lockFile 77ed5915--cache-ngtoast-0-0-8-package-tgz tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+59 silly lockFile a18739bd--npm-cache-ngtoast-0-0-8-package C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package
+60 verbose lock C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package C:\Users\Kakhaber\AppData\Roaming\npm-cache\a18739bd--npm-cache-ngtoast-0-0-8-package.lock
+61 silly lockFile a18739bd--npm-cache-ngtoast-0-0-8-package C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package
+62 silly lockFile a18739bd--npm-cache-ngtoast-0-0-8-package C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package
+63 verbose tar unpack C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+64 silly lockFile db5e00f9--npm-cache-ngtoast-0-0-8-package tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package
+65 verbose lock tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package C:\Users\Kakhaber\AppData\Roaming\npm-cache\db5e00f9--npm-cache-ngtoast-0-0-8-package.lock
+66 silly lockFile 77ed5915--cache-ngtoast-0-0-8-package-tgz tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+67 verbose lock tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz C:\Users\Kakhaber\AppData\Roaming\npm-cache\77ed5915--cache-ngtoast-0-0-8-package-tgz.lock
+68 silly gunzTarPerm modes [ '755', '644' ]
+69 silly gunzTarPerm extractEntry package.json
+70 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+71 silly gunzTarPerm extractEntry README.md
+72 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+73 silly gunzTarPerm extractEntry LICENSE
+74 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+75 silly gunzTarPerm extractEntry bin/ngtoast.bin.js
+76 silly gunzTarPerm modified mode [ 'bin/ngtoast.bin.js', 438, 420 ]
+77 silly gunzTarPerm extractEntry commands/build.js
+78 silly gunzTarPerm modified mode [ 'commands/build.js', 438, 420 ]
+79 silly gunzTarPerm extractEntry commands/install.js
+80 silly gunzTarPerm modified mode [ 'commands/install.js', 438, 420 ]
+81 silly gunzTarPerm extractEntry commands/publish.js
+82 silly gunzTarPerm modified mode [ 'commands/publish.js', 438, 420 ]
+83 silly gunzTarPerm extractEntry libs/utils.js
+84 silly gunzTarPerm modified mode [ 'libs/utils.js', 438, 420 ]
+85 silly lockFile db5e00f9--npm-cache-ngtoast-0-0-8-package tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package
+86 silly lockFile db5e00f9--npm-cache-ngtoast-0-0-8-package tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package
+87 silly lockFile 77ed5915--cache-ngtoast-0-0-8-package-tgz tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+88 silly lockFile 77ed5915--cache-ngtoast-0-0-8-package-tgz tar://C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+89 verbose chmod C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz 644
+90 silly chown skipping for windows C:\Users\Kakhaber\AppData\Roaming\npm-cache\ngtoast\0.0.8\package.tgz
+91 silly lockFile 3a52ce78- .
+92 silly lockFile 3a52ce78- .
+93 silly publish { name: 'ngtoast',
+93 silly publish   description: 'angularjs package manager',
+93 silly publish   version: '0.0.8',
+93 silly publish   author: { name: 'Kakhaber Bazerashvili' },
+93 silly publish   homepage: 'https://github.com/karaxuna/ngtoast',
+93 silly publish   repository: { type: 'git', url: 'git://github.com/karaxuna/ngtoast.git' },
+93 silly publish   license: 'MIT',
+93 silly publish   engines: { node: '>= 0.4.0' },
+93 silly publish   dependencies: { optimist: '', jszip: '', walk: '', async: '', mkdirp: '' },
+93 silly publish   bin: { ngtoast: 'bin/ngtoast.bin.js' },
+93 silly publish   readme: '# ngtoast\n\nPackage manager for angularjs\n\n## Installation:\n\n    npm install ngtoast\n\n## File structure ([example](https://github.com/karaxuna/ngtoast-example)):\n\n    -public\n        -modules\n            -[module]\n                -directives\n                    -[directive name]\n                        -index.js\n                -controllers\n                    -[controller name]\n                        -index.js\n                -filters\n                    -[filter name]\n                        -index.js\n                -factories\n                    -[factory name]\n                        -index.js\n                -views\n                    -[view name]\n                -module.js\n            -[module].[child]\n                ... same here\n    -ngtoast.json\n    \n## Config\n\nParameters must be saved in `ngtoast.json` or passed through command line:\n\n    {\n    \t"public": [path to public folder],\n        "modules": [relative path from public to modules folder],\n        "output": [output file name]\n    }\n    \nBuilding concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):\n\n    ngtoast build\n\n## Output\n\nFile will contain all modules, directives, factories, controllers and filters of application. Each of them will have additional parameters supplied:\n\n    module: {\n        name: [module name],\n        path: [module path],\n        dependencies: [array of child module names]\n    },\n    \n    current: {\n        name: [current directive/filter/factory/controller name],\n        path: [path]\n    }\n    \nExample (`[module]/module.js`):\n\n```javascript\nangular\n    .module(module.name, [\'ui.router\'].concat(module.dependencies.concat))\n    .config([\'$stateProvider\', function(stateProvider){\n        stateProvider\n            .state(module.name, {\n                url: [module url],\n                templateUrl: module.path + \'views/[view name]\',\n                // controller name is prefixed to avoid conflict\n                controller: module.name + \'.c.[controller name]\'\n            });\n    }]);\n```\n        \nExample (`[module]/controllers/[controller name]/index.js`):\n\n```javascript\nangular.module(module.name).controller(module.name + \'.c.\' + current.name,\n    [\'$scope\', function(scope){\n        ...\n    }]);\n```\n\n## Remote packages (not implemented yet!)\n\ninstalling:\n\n    ngtoast install [remote package name] --module [module name] --parent [parent module name] --as [changed module name]\n\nuninstalling:\n\n    ngtoast uninstall [package name]\n\npublishing:\n\n    ngtoast publish [package name]',
+93 silly publish   readmeFilename: 'README.md',
+93 silly publish   bugs: { url: 'https://github.com/karaxuna/ngtoast/issues' },
+93 silly publish   _id: 'ngtoast@0.0.8',
+93 silly publish   dist: { shasum: '0267ca5258590a237aaf4123db0e5513159a8bda' },
+93 silly publish   _from: '.' }
+94 verbose url raw ngtoast
+95 verbose url resolving [ 'https://registry.npmjs.org/', './ngtoast' ]
+96 verbose url resolved https://registry.npmjs.org/ngtoast
+97 info trying registry request attempt 1 at 00:40:41
+98 http PUT https://registry.npmjs.org/ngtoast
+99 http 403 https://registry.npmjs.org/ngtoast
+100 info trying registry request attempt 1 at 00:40:43
+101 http PUT https://registry.npmjs.org/ngtoast
+102 http 403 https://registry.npmjs.org/ngtoast
+103 error publish Failed PUT 403
+104 error Error: forbidden cannot modify pre-existing version: 0.0.8
+104 error old={"name":"ngtoast","description":"angularjs package manager","version":"0.0.8","author":{"name":"Kakhaber Bazerashvili"},"homepage":"https://github.com/karaxuna/ngtoast","repository":{"type":"git","url":"git://github.com/karaxuna/ngtoast.git"},"license":"MIT","engines":{"node":">= 0.4.0"},"dependencies":{"optimist":""},"bin":{"ngtoast":"bin/ngtoast.bin.js"},"bugs":{"url":"https://github.com/karaxuna/ngtoast/issues"},"_id":"ngtoast@0.0.8","dist":{"shasum":"a220f84313d6034f5fc6339007c59e3433596dfd","tarball":"http://registry.npmjs.org/ngtoast/-/ngtoast-0.0.8.tgz"},"_from":".","_npmVersion":"1.3.10","_npmUser":{"name":"karaxuna","email":"kaxabernet@gmail.com"},"maintainers":[{"name":"karaxuna","email":"kaxabernet@gmail.com"}]}
+104 error new={"name":"ngtoast","description":"angularjs package manager","version":"0.0.8","author":{"name":"Kakhaber Bazerashvili"},"homepage":"https://github.com/karaxuna/ngtoast","repository":{"type":"git","url":"git://github.com/karaxuna/ngtoast.git"},"license":"MIT","engines":{"node":">= 0.4.0"},"dependencies":{"optimist":"","jszip":"","walk":"","async":"","mkdirp":""},"bin":{"ngtoast":"bin/ngtoast.bin.js"},"readme":"# ngtoast\u000a\u000aPackage manager for angularjs\u000a\u000a## Installation:\u000a\u000a    npm install ngtoast\u000a\u000a## File structure ([example](https://github.com/karaxuna/ngtoast-example)):\u000a\u000a    -public\u000a        -modules\u000a            -[module]\u000a                -directives\u000a                    -[directive name]\u000a                        -index.js\u000a                -controllers\u000a                    -[controller name]\u000a                        -index.js\u000a                -filters\u000a                    -[filter name]\u000a                        -index.js\u000a                -factories\u000a                    -[factory name]\u000a                        -index.js\u000a                -views\u000a                    -[view name]\u000a                -module.js\u000a            -[module].[child]\u000a                ... same here\u000a    -ngtoast.json\u000a    \u000a## Config\u000a\u000aParameters must be saved in `ngtoast.json` or passed through command line:\u000a\u000a    {\u000a    \u0009\"public\": [path to public folder],\u000a        \"modules\": [relative path from public to modules folder],\u000a        \"output\": [output file name]\u000a    }\u000a    \u000aBuilding concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):\u000a\u000a    ngtoast build\u000a\u000a## Output\u000a\u000aFile will contain all modules, directives, factories, controllers and filters of application. Each of them will have additional parameters supplied:\u000a\u000a    module: {\u000a        name: [module name],\u000a        path: [module path],\u000a        dependencies: [array of child module names]\u000a    },\u000a    \u000a    current: {\u000a        name: [current directive/filter/factory/controller name],\u000a        path: [path]\u000a    }\u000a    \u000aExample (`[module]/module.js`):\u000a\u000a```javascript\u000aangular\u000a    .module(module.name, ['ui.router'].concat(module.dependencies.concat))\u000a    .config(['$stateProvider', function(stateProvider){\u000a        stateProvider\u000a            .state(module.name, {\u000a                url: [module url],\u000a                templateUrl: module.path + 'views/[view name]',\u000a                // controller name is prefixed to avoid conflict\u000a                controller: module.name + '.c.[controller name]'\u000a            });\u000a    }]);\u000a```\u000a        \u000aExample (`[module]/controllers/[controller name]/index.js`):\u000a\u000a```javascript\u000aangular.module(module.name).controller(module.name + '.c.' + current.name,\u000a    ['$scope', function(scope){\u000a        ...\u000a    }]);\u000a```\u000a\u000a## Remote packages (not implemented yet!)\u000a\u000ainstalling:\u000a\u000a    ngtoast install [remote package name] --module [module name] --parent [parent module name] --as [changed module name]\u000a\u000auninstalling:\u000a\u000a    ngtoast uninstall [package name]\u000a\u000apublishing:\u000a\u000a    ngtoast publish [package name]","readmeFilename":"README.md","bugs":{"url":"https://github.com/karaxuna/ngtoast/issues"},"_id":"ngtoast@0.0.8","dist":{"shasum":"0267ca5258590a237aaf4123db0e5513159a8bda","tarball":"http://registry.npmjs.org/ngtoast/-/ngtoast-0.0.8.tgz"},"_from":".","_npmVersion":"1.3.21","_npmUser":{"name":"karaxuna","email":"kaxabernet@gmail.com"},"maintainers":[{"name":"karaxuna","email":"kaxabernet@gmail.com"}]}: ngtoast
+104 error     at RegClient.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:275:14)
+104 error     at Request.self.callback (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:123:22)
+104 error     at Request.EventEmitter.emit (events.js:98:17)
+104 error     at Request.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:893:14)
+104 error     at Request.EventEmitter.emit (events.js:117:20)
+104 error     at IncomingMessage.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:844:12)
+104 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+104 error     at _stream_readable.js:920:16
+104 error     at process._tickCallback (node.js:415:13)
+105 error If you need help, you may report this *entire* log,
+105 error including the npm and node versions, at:
+105 error     <http://github.com/isaacs/npm/issues>
+106 error System Windows_NT 6.1.7600
+107 error command "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+108 error cwd c:\Users\Kakhaber\Desktop\ngtoast
+109 error node -v v0.10.24
+110 error npm -v 1.3.21
+111 verbose exit [ 1, true ]

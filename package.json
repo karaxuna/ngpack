@@ -1,7 +1,7 @@
 {
     "name": "ngtoast",
     "description": "angularjs package manager",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "author": "Kakhaber Bazerashvili",
     "homepage": "https://github.com/karaxuna/ngtoast",
     "repository": "git://github.com/karaxuna/ngtoast.git",
