@@ -9,7 +9,7 @@ module.exports = function(args){
 	fs.readdirSync(modulesAbsPath).forEach(function(mn){
 	    var module = {
 	        name: mn,
-	        path: path.join(args.modules, mn, '/'),
+	        path: path.resolve('/', args.modules, mn),
 	        main: fs.readFileSync(path.join(modulesAbsPath, mn, '/module.js'), 'utf8')
 	    };
 
@@ -20,7 +20,7 @@ module.exports = function(args){
 	            fs.readdirSync(path.join(modulesAbsPath, mn, n)).forEach(function(name){
 	                t.push({
 	                    name: name,
-	                    path: path.join(args.modules, mn, n, name, '/'),
+	                    path: path.resolve('/', args.modules, mn, n, name),
 	                    content: fs.readFileSync(path.join(modulesAbsPath, mn, n, name, '/index.js'), 'utf8')
 	                });
 	            });
