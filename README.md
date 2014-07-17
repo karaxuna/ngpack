@@ -68,7 +68,7 @@ angular
         stateProvider
             .state(module.name, {
                 url: [module url],
-                templateUrl: module.path + 'views/[view name]',
+                templateUrl: module.path + '/views/[view name]',
                 // controller name is prefixed to avoid conflict
                 controller: module.name + '.c.[controller name]'
             });
