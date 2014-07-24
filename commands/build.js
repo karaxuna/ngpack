@@ -1,5 +1,6 @@
 var fs = require('fs'),
-	path = require('path');
+	path = require('path'),
+	uglifyJS = require('uglify-js');
 
 module.exports = function(args){
 	var modules = [],
@@ -66,6 +67,6 @@ module.exports = function(args){
 	                }));
 	}).join('\n');
 
-	fs.writeFileSync(args.output, modulesScript);
+	fs.writeFileSync(args.output, args.minify ? uglifyJS.minify(modulesScript) : modulesScript);
 	console.log('command executed successfully. file saved in ', path.resolve(args.output));
 };
