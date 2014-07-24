@@ -67,6 +67,6 @@ module.exports = function(args){
 	                }));
 	}).join('\n');
 
-	fs.writeFileSync(args.output, args.minify ? uglifyJS.minify(modulesScript) : modulesScript);
+	fs.writeFileSync(args.output, args.minify ? uglifyJS.minify(modulesScript, { fromString: true }).code : modulesScript);
 	console.log('command executed successfully. file saved in ', path.resolve(args.output));
 };
