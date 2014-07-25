@@ -37,7 +37,8 @@ Parameters must be saved in `ngtoast.json` or passed through command line:
     {
     	"public": [path to public folder],
         "modules": [relative path from public to modules folder],
-        "output": [output file name]
+        "output": [output file name],
+        "minify": [if parameter is present output is minified]
     }
     
 Building concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):
