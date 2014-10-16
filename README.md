@@ -85,6 +85,10 @@ angular.module(module.name).controller(module.name + '.c.' + current.name,
     }]);
 ```
 
+## Watch modules folder and call `ngtoast build` each time something changes
+
+    ngtoast watch
+
 ## Remote packages (not implemented yet!)
 
 installing:

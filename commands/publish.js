@@ -32,6 +32,6 @@ module.exports = function(args){
 
 	async.parallel(fns, function(){
 		var zipAsArray = zip.generate({ type : "nodebuffer" });
-		fs.writeFileSync('C:/Users/Kakhaber/Desktop/ngtoast-packages/' + publishAs + '.zip', zipAsArray);
+		fs.writeFileSync('dir' + publishAs + '.zip', zipAsArray);
 	});
 };

@@ -1,7 +1,7 @@
 {
     "name": "ngtoast",
     "description": "angularjs package manager",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "author": "Kakhaber Bazerashvili",
     "homepage": "https://github.com/karaxuna/ngtoast",
     "repository": "git://github.com/karaxuna/ngtoast.git",
@@ -15,7 +15,8 @@
         "walk": "",
         "async": "",
         "mkdirp": "",
-        "uglify-js": ""
+        "uglify-js": "",
+        "chokidar": ""
     },
     "bin": {
         "ngtoast": "bin/ngtoast.bin.js"
