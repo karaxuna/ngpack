@@ -7,15 +7,11 @@ module.exports = function(args){
 	    modulesScript,
 	    modulesAbsPath = path.resolve(args.public, args.modules);
 
-	function normalizePath(p){
-		return p.split('\\').join('/');
-	}
-
 	fs.readdirSync(modulesAbsPath).forEach(function(mn){
-	    var module = {
+		var module = {
 	        name: mn,
-	        path: normalizePath(path.join('/', args.modules, mn)),
-	        main: fs.readFileSync(path.join(modulesAbsPath, mn, '/module.js'), 'utf8')
+	        path: path.join(args.modules, mn),
+	        main: fs.readFileSync(path.join(modulesAbsPath, mn, 'module.js'), 'utf8')
 	    };
 
 	    ['controllers', 'directives', 'factories', 'filters'].forEach(function (n){
@@ -25,7 +21,7 @@ module.exports = function(args){
 	            fs.readdirSync(path.join(modulesAbsPath, mn, n)).forEach(function(name){
 	                t.push({
 	                    name: name,
-	                    path: normalizePath(path.join('/', args.modules, mn, n, name)),
+	                    path: path.join(args.modules, mn, n, name),
 	                    content: fs.readFileSync(path.join(modulesAbsPath, mn, n, name, '/index.js'), 'utf8')
 	                });
 	            });
@@ -49,7 +45,7 @@ module.exports = function(args){
 	                        .replace('=content=', item.content)
 	                        .replace('=item=', JSON.stringify({
 	                            name: item.name,
-	                            path: item.path
+	                            path: clientify(item.path)
 	                        }));
 	        }).join('\n');
 	    }
@@ -62,10 +58,15 @@ module.exports = function(args){
 	                .replace('=filters=', wrap(module.filters))
 	                .replace('=module=', JSON.stringify({
 	                    name: module.name,
-	                    path: module.path,
+	                    path: clientify(module.path),
 	                    dependencies: cmns
 	                }));
 	}).join('\n');
+
+	function clientify(p){
+		p = (args.relative ? './' : '/') + p;
+		return p.split('\\').join('/');
+	}
 
 	fs.writeFileSync(args.output, args.minify ? uglifyJS.minify(modulesScript, { fromString: true }).code : modulesScript);
 	console.log('command executed successfully. file saved in ', path.resolve(args.output));
