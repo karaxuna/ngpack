@@ -51,11 +51,11 @@ module.exports = function(args){
 	    }
 
 	    return '(function(module){ \n =main= \n =controllers= \n =directives= \n =factories= \n =filters= \n })(=module=);'
-	                .replace('=main=', module.main)
 	                .replace('=controllers=', wrap(module.controllers))
 	                .replace('=directives=', wrap(module.directives))
 	                .replace('=factories=', wrap(module.factories))
 	                .replace('=filters=', wrap(module.filters))
+	                .replace('=main=', module.main)
 	                .replace('=module=', JSON.stringify({
 	                    name: module.name,
 	                    path: clientify(module.path),
