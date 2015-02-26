@@ -10,13 +10,13 @@
         "node": ">= 0.4.0"
     },
     "dependencies": {
-        "optimist": "",
-        "jszip": "",
-        "walk": "",
-        "async": "",
-        "mkdirp": "",
-        "uglify-js": "",
-        "chokidar": ""
+        "optimist": "0.6.1",
+        "jszip": "2.3.0",
+        "walk": "2.3.3",
+        "async": "0.9.0",
+        "mkdirp": "0.5.0",
+        "uglify-js": "2.4.*",
+        "chokidar": "0.9.0"
     },
     "bin": {
         "ngtoast": "bin/ngtoast.bin.js"
