@@ -1,10 +1,10 @@
-# ngtoast
+# ngpack
 
 Package manager for angularjs
 
 ## Installation:
 
-    npm install ngtoast
+    npm install ngpack
 
 ## File structure ([example](https://github.com/karaxuna/ngtoast-example)):
 
@@ -28,11 +28,11 @@ Package manager for angularjs
                 -module.js
             -[module].[child]
                 ... same here
-    -ngtoast.json
+    -ngpack.json
     
 ## Config
 
-Parameters must be saved in `ngtoast.json` or passed through command line:
+Parameters must be saved in `ngpack.json` or passed through command line:
 
     {
     	"public": [path to public folder],
@@ -44,7 +44,7 @@ Parameters must be saved in `ngtoast.json` or passed through command line:
     
 Building concatenated file to serve to browser (will be saved in directory matching `output` parameter in configuration):
 
-    ngtoast build
+    ngpack build
 
 ## Output
 
@@ -86,20 +86,20 @@ angular.module(module.name).controller(module.name + '.c.' + current.name,
     }]);
 ```
 
-## Watch modules folder and call `ngtoast build` each time something changes
+## Watch modules folder and call `ngpack build` each time something changes
 
-    ngtoast watch
+    ngpack watch
 
 ## Remote packages (not implemented yet!)
 
 installing:
 
-    ngtoast install [remote package name] --module [module name] --parent [parent module name] --as [changed module name]
+    ngpack install [remote package name] --module [module name] --parent [parent module name] --as [changed module name]
 
 uninstalling:
 
-    ngtoast uninstall [package name]
+    ngpack uninstall [package name]
 
 publishing:
 
-    ngtoast publish [package name]
+    ngpack publish [package name]
