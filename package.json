@@ -1,7 +1,7 @@
 {
     "name": "ngpack", 
     "description": "angularjs package manager",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "author": "Kakhaber Bazerashvili",
     "homepage": "https://github.com/karaxuna/ngpack",
     "repository": "git://github.com/karaxuna/ngpack.git",

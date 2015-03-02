@@ -6,7 +6,7 @@ var fs = require('fs'),
     filefArgs;
 
 // read config file
-var configFilePath = './ngtoast.json';
+var configFilePath = './ngpack.json';
 
 if(fs.existsSync(configFilePath)){
     var configFile = fs.readFileSync(configFilePath);
