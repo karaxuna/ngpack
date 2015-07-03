@@ -89,6 +89,11 @@ angular.module(module.name).controller(module.name + '.c.' + current.name,
 ## Watch modules folder and call `ngpack build` each time something changes
 
     ngpack watch
+    
+## Fix line endings for linux (bug):
+
+sudo apt-get install dos2unix
+cd /usr/local/lib/node_modules/ngpack && sudo dos2unix ./**/*
 
 ## Remote packages (not implemented yet!)
 
