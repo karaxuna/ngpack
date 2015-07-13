@@ -14,7 +14,7 @@ module.exports = function(args){
 	        main: fs.readFileSync(path.join(modulesAbsPath, mn, 'module.js'), 'utf8')
 	    };
 
-	    ['controllers', 'directives', 'factories', 'filters'].forEach(function (n){
+	    ['constants', 'controllers', 'directives', 'factories', 'filters', 'services'].forEach(function (n){
 	        var t = module[n] = [];
 
 	        if(fs.existsSync(path.join(modulesAbsPath, mn, n)))
@@ -50,11 +50,13 @@ module.exports = function(args){
 	        }).join('\n');
 	    }
 
-	    return '(function(module){ \n =main= \n =controllers= \n =directives= \n =factories= \n =filters= \n })(=module=);'
+	    return '(function(module){ \n =main= \n =constants= \n =controllers= \n =directives= \n =factories= \n =filters= \n =services= \n })(=module=);'
+	                .replace('=constants=', wrap(module.constants))
 	                .replace('=controllers=', wrap(module.controllers))
 	                .replace('=directives=', wrap(module.directives))
 	                .replace('=factories=', wrap(module.factories))
 	                .replace('=filters=', wrap(module.filters))
+	                .replace('=services=', wrap(module.services))
 	                .replace('=main=', module.main)
 	                .replace('=module=', JSON.stringify({
 	                    name: module.name,
