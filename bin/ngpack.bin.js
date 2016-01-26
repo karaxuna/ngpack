@@ -3,10 +3,11 @@ var fs = require('fs'),
     path = require('path'),
     utils = require('../libs/utils'),
     clArgs = require('optimist').argv,
+    cwd = process.cwd(),
     filefArgs;
 
 // read config file
-var configFilePath = './ngpack.json';
+var configFilePath = path.resolve(cwd, './ngpack.json');
 
 if(fs.existsSync(configFilePath)){
     var configFile = fs.readFileSync(configFilePath);
