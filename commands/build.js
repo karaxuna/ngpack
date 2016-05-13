@@ -17,14 +17,41 @@ module.exports = function(args){
 	    ['constants', 'controllers', 'directives', 'factories', 'filters', 'services'].forEach(function (n){
 	        var t = module[n] = [];
 
-	        if(fs.existsSync(path.join(modulesAbsPath, mn, n)))
-	            fs.readdirSync(path.join(modulesAbsPath, mn, n)).forEach(function(name){
-	                t.push({
-	                    name: name,
-	                    path: path.join(args.modules, mn, n, name),
-	                    content: fs.readFileSync(path.join(modulesAbsPath, mn, n, name, '/index.js'), 'utf8')
-	                });
+	        if(fs.existsSync(path.join(modulesAbsPath, mn, n))) {
+	            fs.readdirSync(path.join(modulesAbsPath, mn, n)).forEach(function (name) {
+                    /**
+                     * @param  {String} parentName
+                     * @param  {String} pathName
+                     */
+                    (function parse(parentName, relativePath) {
+                        fs.readdirSync(path.resolve(args.public, relativePath)).forEach(function (itemName) {
+                            var itemRelativePath = path.join(relativePath, itemName);
+                            var itemAbsPath = path.resolve(args.public, itemRelativePath);
+                            
+                            if (itemName === 'index.js') {
+                                t.push({
+                                    name: parentName,
+                                    path: relativePath,
+                                    content: fs.readFileSync(itemAbsPath, 'utf8')
+                                });
+                            } else {
+                                var stats = fs.lstatSync(itemAbsPath);
+                                
+                                if (stats.isDirectory()) {
+                                    parse(parentName + '/' + itemName, itemRelativePath);
+                                }
+                                else if (stats.isFile() && path.extname(itemName) === '.js') {
+                                    t.push({
+                                        name: parentName + '/' + itemName.substring(0, itemName.lastIndexOf(path.extname(itemName))),
+                                        path: relativePath,
+                                        content: fs.readFileSync(itemAbsPath, 'utf8')
+                                    });
+                                }
+                            }
+                        });
+                    })(name, path.join(args.modules, mn, n, name));
 	            });
+            }
 	    });
 	    modules.push(module);
 	});
