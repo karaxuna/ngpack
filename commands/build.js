@@ -40,7 +40,7 @@ module.exports = function(args){
                                 if (stats.isDirectory()) {
                                     parse(parentName + '/' + itemName, itemRelativePath);
                                 }
-                                else if (stats.isFile() && path.extname(itemName) === '.js') {
+                                else if (stats.isFile() && path.extname(itemName) === '.js' && itemName.indexOf('.test.js') === -1) {
                                     t.push({
                                         name: parentName + '/' + itemName.substring(0, itemName.lastIndexOf(path.extname(itemName))),
                                         path: relativePath,
